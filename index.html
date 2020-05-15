@@ -7,6 +7,7 @@
     <title>SITE PESSOAL | Imersão_CSS Alura</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d3c4db991.js" crossorigin="anonymous"></script>
 
@@ -16,23 +17,23 @@
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="title">
             <h1 class="site-title">&lt/&gtAngelo TI</h1>
             <h2 class="site-subtitle">web<span class="dark">developer</span><span class="blink">|</span></h2>
         </div>
 
     </header>
 
-    <section class="portfolio">
-        <h2>PROJECTS</h2>
+    <section class="portfolio" id="projects">
+        <h2>Projects</h2>
         <div class="grid">
             <figure>
-                <img class="img-portfolio" src="./images/onlineresume.png" alt="Online Resume">
+                <a target="_blank" href="https://tisangelo.github.io"><img class="img-portfolio" src="./images/onlineresume.png" alt="Online Resume"></a>
                 <figcaption>Online Resume (Bootstrap 4)</figcaption>
             </figure>
             <figure>
@@ -47,7 +48,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2>CONTACT</h2>
+        <h2>Contact</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/TiSAngelo">
                 <i class="fab fa-github" aria-hidden="true"></i>
@@ -64,7 +65,7 @@
         </div>
 
     </section>
-    <!--<footer class="signature">Powered by TiSangelo&reg;</footer>-->
+    <footer class="signature">Powered by TiSangelo&reg;</footer>
     <script src="https://kit.fontawesome.com/1d3c4db991.js " crossorigin="anonymous "></script>
 </body>
 
