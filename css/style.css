@@ -25,7 +25,7 @@ header {
 
 .menu {
     background-color: #252525;
-    padding: 1vh;
+    padding: 0.3em;
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,6 +39,13 @@ header {
 
 .menu li {
     list-style: none;
+}
+
+@media(min-width:768px) {
+    .menu ul {
+        justify-content: flex-end;
+        padding: 0.2em 1em 0.2em 1em;
+    }
 }
 
 .menu a {
@@ -119,12 +126,29 @@ header {
 }
 
 .about,
-.contact,
-.portfolio {
+.portfolio,
+.contact {
     padding: 2em 2em 0 2em;
-    min-height: 97vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.about {
+    min-height: 55vh;
+}
+
+.portfolio {
+    min-height: 55vh;
+}
+
+.contact {
+    min-height: 93vh;
+}
+
+@media (min-height: 1024px) {
+    .contact {
+        min-height: 40vh;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -188,7 +212,7 @@ header {
 @media (min-width: 1000px) {
     .about .avatar img {
         height: auto;
-        width: 400px;
+        width: 350px;
         float: right;
         margin-left: 2em;
         clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
@@ -204,6 +228,7 @@ header {
 .portfolio figcaption {
     font-size: 20px;
     line-height: 3em;
+    color: rgb(225, 110, 0);
 }
 
 .portfolio .grid {
@@ -240,7 +265,7 @@ header {
 
 .img-portfolio:active,
 .img-portfolio:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .contact h2 {
@@ -250,7 +275,7 @@ header {
 .contact a {
     color: rgb(200, 200, 200);
     text-decoration: none;
-    font-size: 4em;
+    font-size: 3.5em;
     transition: color 0.4s;
 }
 
@@ -261,7 +286,6 @@ header {
 
 .contact .icons {
     text-align: center;
-    padding-top: 5em;
 }
 
 .signature {
@@ -269,6 +293,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    text-align: center;
 }
 
 .signature a {
