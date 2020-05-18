@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: #252525;
     background-size: auto 100vh;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
@@ -128,9 +128,7 @@ header {
 }
 
 @media (min-width: 1000px) {
-    .about,
-    .contact,
-    .portfolio {
+    .container {
         max-width: 1000px;
     }
 }
@@ -144,6 +142,56 @@ header {
     line-height: 3em;
     margin-bottom: 1em;
     color: rgb(225, 110, 0);
+}
+
+.avatar {
+    text-align: center;
+}
+
+.about .avatar img {
+    height: auto;
+    width: 230px;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    margin-bottom: 2em;
+}
+
+@media (min-width: 500px) {
+    .about .avatar img {
+        height: auto;
+        width: 300px;
+        clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 568px) {
+    .about .avatar img {
+        height: auto;
+        width: 260px;
+        float: right;
+        margin-left: 2em;
+        clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    }
+}
+
+@media (min-width: 700px) {
+    .about .avatar img {
+        height: auto;
+        width: 300px;
+        float: right;
+        margin-left: 2em;
+        clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    }
+}
+
+@media (min-width: 1000px) {
+    .about .avatar img {
+        height: auto;
+        width: 400px;
+        float: right;
+        margin-left: 2em;
+        clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    }
 }
 
 .about p {
@@ -216,8 +264,20 @@ header {
 }
 
 .signature {
+    color: rgb(225, 110, 0);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 1em;
+}
+
+.signature a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    transition: color 0.2s;
+}
+
+.signature a:active,
+.signature a:hover {
+    color: rgb(73, 73, 73);
 }
